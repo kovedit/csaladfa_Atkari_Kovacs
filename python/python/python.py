@@ -19,8 +19,6 @@ for h in hazas:
 be = input("Írjon be egy vezetéknevet: ")
 be2 = input("Írjon be egy keresztnevet: ")
 
-
-
 cursor.execute("SELECT * FROM `ember` WHERE vezeteknev = be AND keresztnev = be2 ")
 keresett = cursor.fetchall()
 print(keresett)
