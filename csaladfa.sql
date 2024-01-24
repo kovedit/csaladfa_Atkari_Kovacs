@@ -17,7 +17,7 @@ CREATE TABLE ember (
 
 CREATE TABLE hazas (
     feleseg_id int NOT NULL,
-    ferj_id int NOT NULL,    
+    ferj_id int NOT NULL,   
     hazassag_ido date(),
     hazassag_hely varchar(50)
 )
