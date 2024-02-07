@@ -1,4 +1,4 @@
-﻿import sqlite3
+import sqlite3
 
 beolvas = sqlite3.connect("csaladfa.db")
 
@@ -71,6 +71,6 @@ van_e = cursor.fetchall()
 anyjaid = van_e[0]
 apjaid = van_e[1]
 print(anyjaid)
-if (len(van_e) == 0):
-    print("Nincsenek a családfában a szülei")
+#if (len(van_e) == 0):
+    #print("Nincsenek a családfában a szülei")
 
