@@ -4,7 +4,7 @@ beolvas = sqlite3.connect("csaladfa.db")
 
 cursor = beolvas.cursor()
 
-"""cursor.execute("SELECT * FROM `ember`")
+cursor.execute("SELECT * FROM `ember`")
 item = cursor.fetchall()
 for i in item:
     print(i)
@@ -12,7 +12,7 @@ for i in item:
 cursor.execute("SELECT feleseg_id FROM hazas")
 hazas = cursor.fetchall()
 for h in hazas:
-    print(h)"""
+    print(h)
 
 #funkció
 def Kereses(id):
