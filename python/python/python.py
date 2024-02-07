@@ -66,3 +66,11 @@ else:
         print(f"A felesége neve: {feleseg_nev}")
 
 #anyja, apja
+cursor.execute(f"select anyja_id, apja_id from ember where id = '{id}'")
+van_e = cursor.fetchall()
+anyjaid = van_e[0]
+apjaid = van_e[1]
+print(anyjaid)
+if (len(van_e) == 0):
+    print("Nincsenek a családfában a szülei")
+
