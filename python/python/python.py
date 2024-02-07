@@ -4,7 +4,7 @@ beolvas = sqlite3.connect("csaladfa.db")
 
 cursor = beolvas.cursor()
 
-cursor.execute("SELECT * FROM `ember`")
+"""cursor.execute("SELECT * FROM `ember`")
 item = cursor.fetchall()
 for i in item:
     print(i)
@@ -18,7 +18,7 @@ for h in hazas:
 def Kereses(id):
     cursor.execute(f"select vezeteknev, keresztnev from ember where id = {id}")
     eredmeny = cursor.fetchall()
-    return eredmeny
+    return eredmeny"""
 
 be = input("Írjon be egy vezetéknevet: ")
 be2 = input("Írjon be egy keresztnevet: ")
