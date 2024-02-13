@@ -2,12 +2,12 @@ DROP TABLE IF EXISTS ember;
 DROP TABLE IF EXISTS hazas;
 CREATE TABLE ember (
     id int PRIMARY KEY,
-    vezeteknev varchar NOT NULL,
-    keresztnev varchar NOT NULL,
-    szul_hely varchar NOT NULL,
-    szul_ido date NOT NULL,
+    vezeteknev varchar,
+    keresztnev varchar,
+    szul_hely varchar,
+    szul_ido date,
     foglalkozas varchar,
-    nem varchar NOT NULL,
+    nem varchar,
     halal_ido date,
     halal_ok varchar,
     halal_hely varchar,
