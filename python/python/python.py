@@ -4,9 +4,9 @@ beolvas = sqlite3.connect("csaladfa.db")
 
 cursor = beolvas.cursor()
 
-mire = input("Mi alapján keresne?\nNév, születési hely / idő, foglalkozás, halálozási hely / év?\n\t")
+mire = input("Mi alapján keresne?\nNév (1), születési hely (2) / idő (3), foglalkozás (4), halálozási hely (5) / év (6)?\n\t")
 
-if (mire == "név"):
+if (mire == "1"):
     be = input("Írjon be egy vezetéknevet: ")
     be2 = input("Írjon be egy keresztnevet: ")
 
@@ -87,7 +87,7 @@ if (mire == "név"):
 
 
 
-if (mire == "születési hely"):
+if (mire == "2"):
     hol_szul = input("Írja be a helyet ami érdekli: ")
     cursor.execute(f"Select count(*) from ember where szul_hely like '{hol_szul}'")
     keresett = cursor.fetchone()
@@ -107,7 +107,7 @@ if (mire == "születési hely"):
 
 
 
-if (mire == "születési idő"):
+if (mire == "3"):
     mikor_szul = input("Írja be a dátumot ami érdekli (kötőjelekkel elválasztva): ")
     cursor.execute(f"Select count(*) from ember where szul_ido = {mikor_szul}")
     keresett = cursor.fetchone()
@@ -127,7 +127,7 @@ if (mire == "születési idő"):
 
 
 
-if (mire == "foglalkozás"):
+if (mire == "4"):
     foglal = input("Írja be a foglalkozást ami érdekli: ")
     cursor.execute(f"Select count(*) from ember where foglalkozas like '{foglal}'")
     keresett = cursor.fetchone()
@@ -147,7 +147,7 @@ if (mire == "foglalkozás"):
 
 
 
-if (mire == "halálozási hely"):
+if (mire == "5"):
     hol_halal = input("Írja be a helyet ami érdekli: ")
     cursor.execute(f"Select count(*) from ember where halal_hely like '{hol_halal}'")
     keresett = cursor.fetchone()
@@ -167,7 +167,7 @@ if (mire == "halálozási hely"):
 
 
 
-if (mire == "halálozási év"):
+if (mire == "6"):
     mikor_halal = input("Írja be az évet ami érdekli: ")
     cursor.execute(f"Select count(*) from ember where halal_ido = {mikor_halal}")
     keresett = cursor.fetchone()
